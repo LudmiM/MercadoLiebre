@@ -1,0 +1,56 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+:root{
+    --colorAmarilloHeader: #FFE600;
+    --colorGrisFondo: #D9D9D9;
+    --colorNegroLetras: #000;
+    --colorGrisLetras: #363636;
+    --colorCelesteLetras: #3484FA; 
+    --colorazulLogo: #002F6D;
+    --colorGrisLinks: #707070;
+    --colorGrisBuscador: #BFBFBF;
+    --colorGrisRelleno: #E7E7E7;
+    --colorBlancoFondo: #FFF;
+    --colorVerdeLetras: #00A650;
+    --colorVioleta: #43036A;
+    --colorFuccia: #B313CF;
+    --colorFucciaBorde: #A32A69;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Roboto';
+    background-color: var(--colorGrisFondo);
+}
+
+input:focus {
+    outline: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+i{
+    font-size: 20px;
+}
+
+li,ul,ol{
+    list-style: none;
+    padding: 0;
+}

@@ -1,0 +1,136 @@
+.header{
+    background-color: var(--colorAmarilloHeader);
+    width: 100%;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Estilos para logo*/
+.header__link{
+    display: flex;
+    align-items: center;
+}
+.header__logo{
+    width: 60px;
+}
+
+/*Color hamburguesa y crrito icono*/
+.header__icon{
+    color: var(--colorGrisLetras);
+}
+.header__nombre{
+    width: 90px;
+    color: var(--colorazulLogo);
+    font-size: 25px;
+    margin: auto 20px;
+    font-weight: bold;
+}
+.header__domicilios--listado{
+    width: 100%;
+    display: flex;
+}
+.header__domicilios{
+    order: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.header__domicilios__button, .header__domicilios__i{
+    color: var(--colorGrisLinks)
+}
+/*Para el formulario de busqueda*/
+.header__form__busquedas{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header__form__busquedas__input{
+    height: 40px;
+    padding-left: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px var(--colorGrisLinks);
+}
+.header__form__busquedas__input::placeholder{
+    color: var(--colorGrisBuscador);
+}
+.header__form__busquedas__button{
+    position: absolute;
+    left: 5%;
+}
+.header__form__busquedas__button__icon{
+    font-size: 16px;
+    color: var(--colorGrisBuscador)
+}
+/*Ocultar para movile*/
+.header__listadoNavegacion, .header__listadoNavegacion__listadoGeneral, .header__listadoNavegacion__sesion{
+    display: flex;   
+}
+.header__nombre, .header__listadoNavegacion, .header__ofertaNivel6{
+    display:none
+}
+
+.header__ofertaNivel6__imagenTexto--img{
+    width: 130px;
+}
+.header__ofertaNivel6__imagenTexto--txt{
+    font-size: 10px;
+    text-align: center;
+    margin-top: -15px;
+}
+.header__ofertaNivel6__llamadoAccion{
+    color: var(--colorBlancoFondo);
+    padding: 12px;
+    margin-left: 10px;
+    background: linear-gradient(to right, var(--colorFuccia), var(--colorVioleta));
+    border: 1px solid  var(--colorFucciaBorde);
+    border-radius: 5px;
+}
+@media (min-width: 600px) {
+    .header{
+        padding-top: 20px;
+        padding-bottom: 17px;
+    }
+    .header__form__busquedas__input{
+       width: 400px;
+    }
+    .header__domicilios{
+        margin-top: 20px;
+    }
+}
+@media (min-width: 1080px) {
+    .header__form__busquedas__input{
+        width: 460px;
+    }
+    .header__ofertaNivel6{
+        display: flex;
+        align-items: center;
+       /* margin-left: 15px;*/
+    }
+    .header__nombre, .header__listadoNavegacion{
+        display: flex;
+        order: 3;
+    }
+    .header__listadoNavegacion{
+        margin-top: 20px;
+    }
+    .header__listadoNavegacion__listadoGeneral, .header__listadoNavegacion__sesion{
+        margin-left: 15px;
+    }
+    .header__listadoNavegacion__listadoGeneral__li, .header__listadoNavegacion__sesion__li{
+        margin-left: 15px ;
+    }
+    .header__icon__notBig{
+        display: none;
+    }
+    .header__domicilios{
+       padding: auto;
+       margin-right: 30px;
+       width: auto;
+    }
+}
