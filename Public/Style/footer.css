@@ -3,6 +3,33 @@
     background-color: var(--colorBlancoFondo);
 }
 
+/*Sobre pago e info de envio*/
+.footer__section__sobrePagoProductos{
+    
+}
+
+/*Botones cancelar e informacion*/
+.footer__section__cancelarInfo{
+    width: 100%;
+}
+.footer__section__cancelarInfo__article{
+    border: 2px solid var(--colorGrisBuscador); 
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer__section__cancelarInfo__article--h4{
+    color: var(--colorGrisLinks)
+}
+.footer__section__cancelarInfo__article--a{
+    color: var(--colorCelesteLetras);
+}
+
 /*Datos legles*/
 .footer__section__datosLegales{
     width: 100%;
