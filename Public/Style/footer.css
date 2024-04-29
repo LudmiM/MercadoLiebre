@@ -4,10 +4,27 @@
 }
 
 /*Sobre pago e info de envio*/
-.footer__section__sobrePagoProductos{
-    
+.footer__section__sobrePagoProductos__article{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
+.footer__section__sobrePagoProductos--icon{
+    font-size: 50px;
+}
+.footer__section__sobrePagoProductos--h4{
+    font-weight: normal; 
+    font-size: 20px;
+}
+.footer__section__sobrePagoProductos--p{
+    text-align: center;
+    color: var(--colorGrisLinks);
+}
+.footer__section__sobrePagoProductos--a{
+    color: var(--colorCelesteLetras);
+}
 /*Botones cancelar e informacion*/
 .footer__section__cancelarInfo{
     width: 100%;
